@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pageview/Pages/adventure.dart';
+import 'package:pageview/Pages/music.dart';
+import 'package:pageview/Pages/profile.dart';
+import 'package:pageview/Pages/video.dart';
 import 'package:pageview/homapage.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -17,16 +20,16 @@ class _BottomNavBarState extends State<BottomNavBar> {
       'page': NewsPage(),
     },
     {
+      'page': Video(),
+    },
+    {
+      'page': Music(),
+    },
+    {
       'page': Adventure(),
     },
     {
-      'page': NewsPage(),
-    },
-    {
-      'page': NewsPage(),
-    },
-    {
-      'page': NewsPage(),
+      'page': ProfilePage(),
     }
   ];
 
@@ -51,20 +54,20 @@ class _BottomNavBarState extends State<BottomNavBar> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.video_call),
+            label: 'Video',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.music_note),
+            label: 'Music',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.drive_eta),
+            label: 'Adventure',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.person),
+            label: 'Profile',
           ),
         ],
       ),

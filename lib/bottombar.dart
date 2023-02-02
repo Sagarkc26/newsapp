@@ -54,7 +54,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.video_call),
+            icon: Icon(Icons.image),
             label: 'Video',
           ),
           BottomNavigationBarItem(
